@@ -7,3 +7,12 @@ c:\users\harir mohamed\documents\visual studio 2015\Projects\DB_SAIR_NOTES\DB_SA
 c:\users\harir mohamed\documents\visual studio 2015\Projects\DB_SAIR_NOTES\DB_SAIR_NOTES\obj\Debug\DB_SAIR_NOTES.csproj.GenerateResource.Cache
 c:\users\harir mohamed\documents\visual studio 2015\Projects\DB_SAIR_NOTES\DB_SAIR_NOTES\obj\Debug\DB_SAIR_NOTES.exe
 c:\users\harir mohamed\documents\visual studio 2015\Projects\DB_SAIR_NOTES\DB_SAIR_NOTES\obj\Debug\DB_SAIR_NOTES.pdb
+C:\Users\harir mohamed\Desktop\GNotes\bin\Debug\DB_SAIR_NOTES.exe.config
+C:\Users\harir mohamed\Desktop\GNotes\obj\Debug\DB_SAIR_NOTES.exe
+C:\Users\harir mohamed\Desktop\GNotes\obj\Debug\DB_SAIR_NOTES.pdb
+C:\Users\harir mohamed\Desktop\GNotes\bin\Debug\DB_SAIR_NOTES.exe
+C:\Users\harir mohamed\Desktop\GNotes\bin\Debug\DB_SAIR_NOTES.pdb
+C:\Users\harir mohamed\Desktop\GNotes\obj\Debug\DB_SAIR_NOTES.csprojResolveAssemblyReference.cache
+C:\Users\harir mohamed\Desktop\GNotes\obj\Debug\DB_SAIR_NOTES.Form1.resources
+C:\Users\harir mohamed\Desktop\GNotes\obj\Debug\DB_SAIR_NOTES.Properties.Resources.resources
+C:\Users\harir mohamed\Desktop\GNotes\obj\Debug\DB_SAIR_NOTES.csproj.GenerateResource.Cache

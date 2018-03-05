@@ -7,15 +7,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace DB_SAIR_NOTES
 {
     public partial class Form1 : Form
     {
+        BindingManagerBase B; 
+         SqlConnection Cnx = new SqlConnection(@"Data Source=HARIRMOHAMED\TDI201_2018;Initial Catalog=DB_SAIR_Notes;Integrated Security=True");
+         SqlCommand cmd = new SqlCommand();
+         SqlDataAdapter da = new SqlDataAdapter();
+         SqlDataReader dr;
+         DataSet ds;
+        public void init(string cmmd, int type)
+        {
+            if (type == 1) cmd.CommandType = CommandType.StoredProcedure;
+            if (type == 2) cmd.CommandType = CommandType.Text;
+            cmd.Connection = Cnx;
+            cmd.CommandText = cmmd;
+        }
+
+        #region Data & Initial Predefined Behaviour
         //tabs
-        // pos localtion=new Point(215, 12);
-        //size Size = new Size(787, 462); 
-        //Hide all tabs
+        // default localtion=new Point(215, 12);
+        // default Size = new Size(787, 462); 
+
         //Buttons  https://flatuicolors.com/palette/fr
         //active     Good SAMARITAN      Color.FromArgb(1,60, 99, 130) rgba(60, 99, 130,1.0);
         //default    Forest Blues        Color.FromArgb(1,10, 61, 98) rgba(10, 61, 98,1.0);
@@ -90,6 +106,11 @@ namespace DB_SAIR_NOTES
         {
             Application.Exit();
         }
-         
+        #endregion
+        
+        #region Bindings & data processing
+        
+
+        #endregion
     }
 }

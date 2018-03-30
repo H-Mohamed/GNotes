@@ -12,6 +12,10 @@
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,8 +37,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Viewing.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.VSDesigner, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,15 +61,103 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DP.cs" />
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_SAIR_NotesDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_SAIR_NotesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_SAIR_NotesDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_SAIR_NotesDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_SAIR_NotesDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_SAIR_NotesDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_SAIR_NotesDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_SAIR_NotesDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_SAIR_NotesDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_SAIR_NotesDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_SAIR_NotesDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_SAIR_NotesDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_SAIR_NotesDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_SAIR_NotesDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_SAIR_NotesDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_SAIR_NotesDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_SAIR_NotesDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_SAIR_NotesDataSet8.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="IDETUDIANTS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IDETUDIANTS.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuestionB-Bulletin.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuestionB-Bulletin.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -67,6 +170,142 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="QuestionB-Bulletin.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>QuestionB-Bulletin.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DB_SAIR_NotesDataSet.xsc">
+      <DependentUpon>DB_SAIR_NotesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DB_SAIR_NotesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_SAIR_NotesDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_SAIR_NotesDataSet.xss">
+      <DependentUpon>DB_SAIR_NotesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DB_SAIR_NotesDataSet1.xsc">
+      <DependentUpon>DB_SAIR_NotesDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DB_SAIR_NotesDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_SAIR_NotesDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_SAIR_NotesDataSet1.xss">
+      <DependentUpon>DB_SAIR_NotesDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DB_SAIR_NotesDataSet2.xsc">
+      <DependentUpon>DB_SAIR_NotesDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DB_SAIR_NotesDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_SAIR_NotesDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_SAIR_NotesDataSet2.xss">
+      <DependentUpon>DB_SAIR_NotesDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DB_SAIR_NotesDataSet3.xsc">
+      <DependentUpon>DB_SAIR_NotesDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DB_SAIR_NotesDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_SAIR_NotesDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_SAIR_NotesDataSet3.xss">
+      <DependentUpon>DB_SAIR_NotesDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DB_SAIR_NotesDataSet4.xsc">
+      <DependentUpon>DB_SAIR_NotesDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DB_SAIR_NotesDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_SAIR_NotesDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_SAIR_NotesDataSet4.xss">
+      <DependentUpon>DB_SAIR_NotesDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DB_SAIR_NotesDataSet5.xsc">
+      <DependentUpon>DB_SAIR_NotesDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DB_SAIR_NotesDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_SAIR_NotesDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_SAIR_NotesDataSet5.xss">
+      <DependentUpon>DB_SAIR_NotesDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DB_SAIR_NotesDataSet6.xsc">
+      <DependentUpon>DB_SAIR_NotesDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DB_SAIR_NotesDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_SAIR_NotesDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_SAIR_NotesDataSet6.xss">
+      <DependentUpon>DB_SAIR_NotesDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DB_SAIR_NotesDataSet7.xsc">
+      <DependentUpon>DB_SAIR_NotesDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="DB_SAIR_NotesDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_SAIR_NotesDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_SAIR_NotesDataSet7.xss">
+      <DependentUpon>DB_SAIR_NotesDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="DB_SAIR_NotesDataSet8.xsc">
+      <DependentUpon>DB_SAIR_NotesDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="DB_SAIR_NotesDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_SAIR_NotesDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_SAIR_NotesDataSet8.xss">
+      <DependentUpon>DB_SAIR_NotesDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="IDETUDIANTS.xsc">
+      <DependentUpon>IDETUDIANTS.xsd</DependentUpon>
+    </None>
+    <None Include="IDETUDIANTS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IDETUDIANTS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IDETUDIANTS.xss">
+      <DependentUpon>IDETUDIANTS.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -79,6 +318,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
